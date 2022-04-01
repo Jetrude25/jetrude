@@ -1,0 +1,49 @@
+.body{
+    /* display: grid; */
+    background-color: aliceblue;
+}
+.grid{
+    background-color: aliceblue;
+    width: 600px;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 70px 70px auto 70px ;
+    grid-template-columns:60px auto 60px ;
+    grid-template-areas: "t-top t-top t-top"
+    "t-left r-top t-right"
+    "t-left milieu t-right"
+    "pied pied pied"
+    ;
+    margin: auto;
+    gap: 10px 10px;
+}
+.colonne1{
+    background-color: crimson;
+    grid-area:t-top ;
+}
+.colonne2{
+    background-color: blue;
+    grid-area: r-top ;
+
+    
+}
+.colonne4{
+    background-color:yellow ;
+    grid-area: t-right;
+}
+
+.colonne3{
+    background-color:green ;
+    grid-area: t-left;
+
+}
+.colonne5{
+    background-color: rgb(173, 177, 173);
+    grid-area:milieu ;
+   
+
+}
+.colonne6{
+    background-color: aqua;
+    grid-area: pied;  
+}
